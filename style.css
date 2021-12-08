@@ -78,7 +78,7 @@ body {
 	animation: marquee-two 15s linear infinite;
 }
 
-.marquee--inner:hover {
+.marquee--inner:hover, .marquee--inner--two:hover, .marquee--inner--three:hover {
 	animation-play-state: paused;
 }
 
