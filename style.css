@@ -1,0 +1,105 @@
+body {
+	margin: 0;
+	font-size: 42px;
+	font-family: sans-serif;
+	color: #333;
+	overflow: hidden;
+}
+
+.logo {
+	width: 12%;
+	height: 40px;
+	background: #999;
+	border-radius: 50px;
+	display: inline-block;
+	margin: 0 0.75rem;
+	float: left;
+	transition: all 0.2s ease-out;
+}
+
+.logo:hover {
+	transform: scale(1.2);
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.red {
+	background: red;
+}
+.yellow {
+	background: yellow;
+}
+.blue {
+	background: blue;
+}
+.orange {
+	background: orange;
+}
+.purple {
+	background: purple;
+}
+.green {
+	background: green;
+}
+
+.marquee {
+	height: 250px;
+    padding: 1.5rem 0;
+	width: 85%;
+	border: 2px solid #eee;
+	overflow: hidden;
+	box-sizing: border-box;
+	position: relative;
+	margin: 200px auto;
+	display: flex;
+	flex-direction: row;
+}
+/* marquee one */
+.marquee--inner {
+	display: block;
+	width: 200%;
+	margin: 70px 0;
+	position: absolute;
+	animation: marquee 23s linear infinite;
+}
+/* marquee two */
+.marquee--inner--two {
+	display: block;
+	width: 200%;
+	position: absolute;
+	animation: marquee-two 25s linear infinite;
+}
+/* marquee three */
+.marquee--inner--three {
+	display: block;
+	width: 200%;
+	margin: 9rem 0;
+	position: absolute;
+	animation: marquee-two 15s linear infinite;
+}
+
+.marquee--inner:hover {
+	animation-play-state: paused;
+}
+
+span {
+	float: left;
+	width: 50%;
+}
+
+@keyframes marquee {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: -100%;
+	}
+}
+@keyframes marquee-two {
+	100% {
+		right: -100%;
+	}
+	0% {
+		right: 0;
+	}
+}
