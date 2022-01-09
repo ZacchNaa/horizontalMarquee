@@ -45,7 +45,7 @@ body {
 .marquee {
 	height: 250px;
     padding: 1.5rem 0;
-	width: 85%;
+	width: 92%;
 	border: 2px solid #eee;
 	overflow: hidden;
 	box-sizing: border-box;
@@ -73,8 +73,8 @@ body {
 .marquee--inner--three {
 	display: block;
 	width: 200%;
-	margin: 9rem 0;
 	position: absolute;
+	margin: 9rem 0;
 	animation: marquee-two 15s linear infinite;
 }
 
@@ -103,3 +103,24 @@ span {
 		right: 0;
 	}
 }
+
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

@@ -1,0 +1,59 @@
+section.chips
+    padding: 100px 0px
+
+    h3.intro-header
+        @include h3-Termina($white)
+        width: 55%
+        margin-bottom: 80px
+        text-align: center
+
+    .marquee
+        width: $marquee-width
+        height: $marquee-height
+        background-color: #111
+        color: #eee
+        overflow: hidden
+        position: relative
+
+        &:before, &:after
+            position: absolute
+            top: 0
+            width: 10rem
+            height: 100%
+            content: ""
+            z-index: 1
+
+        &:before
+            left: 0
+            background: linear-gradient(to right, #111 0%, transparent 100%)
+
+        &:after
+            right: 0
+            background: linear-gradient(to left, #111 0%, transparent 100%)
+
+        .marquee-content
+            list-style: none
+            height: 100%
+            display: flex
+            animation: scrolling 20s linear infinite
+
+            &:hover
+                animation-play-state: paused
+
+            li
+                display: flex
+                justify-content: center
+                align-items: center
+                text-align: center
+                flex-shrink: 0
+                width: 200px
+                max-height: 100%
+                white-space: nowrap
+
+// marquee keyFrame
+@keyframes scrolling
+    0%
+        transform: translateX(0)
+
+    100%
+        transform: translateX(-100%)

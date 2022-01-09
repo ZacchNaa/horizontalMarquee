@@ -1,0 +1,43 @@
+    // .marquee
+        background-color: white
+        display: flex
+        flex-direction: row
+        width: $marquee-width
+        // height: $marquee-height
+        margin: 0 auto
+        position: relative
+
+        .chip-list
+            list-style: none
+            padding: 0px
+            margin: 0px
+            margin-bottom: 30px
+            overflow: hidden
+            display: flex
+            position: absolute
+            animation: marquee 23s linear infinite
+            background-color: red
+
+            
+            li
+                background: #222237
+                padding: 16px 24px
+                padding-left: 64px
+                box-shadow: inset 0px -2px 0px rgba(39, 38, 58, 0.84), inset 0px 1px 0px rgba(255, 255, 255, 0.25)
+                backdrop-filter: blur(4px)
+                border-radius: 40px
+                font-family: $MatterSQ-Regular
+                font-size: 16px
+                line-height: 24px
+                width: $marquee-element-width
+                color: $white
+                display: inline-block
+                position: relative
+                margin: 0px 16px
+                flex-shrink: 0
+
+            span.icon
+                width: 24px
+                height: 24px
+                left: 24px
+                position: absolute

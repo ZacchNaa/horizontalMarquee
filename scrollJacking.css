@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;  
+}
+
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background-color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.scrolljacking {
+  position: relative;
+  top: 0;
+  transition: top 1s ease;
+  color: #FFF;
+}
+
+.section {
+  margin: auto;
+  padding: 0 calc(6% + 30px);
+  max-width: 80%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+}
+
+.section p {
+  line-height: 1.4;
+  font-size: 18px;
+}
