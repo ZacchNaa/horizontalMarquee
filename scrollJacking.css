@@ -5,16 +5,33 @@
   font-family: 'Roboto', sans-serif;  
 }
 
-html {
-  height: 100vh;
-  overflow: hidden;
+.container{
+    height: 90vh;
+    max-height: 90%;
+    width: 80vw;
+    background-color: red;
+    margin: 2rem auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-body {
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-  background-color: #333;
+.left{
+    background-color: #FFF;
+    width: 50%;
+    height: 100%;
+}
+.left img{
+ width: 100%;
+ height: 100%;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 h1 {
@@ -22,21 +39,26 @@ h1 {
   margin-bottom: 20px;
 }
 
-.scrolljacking {
-  position: relative;
-  top: 0;
-  transition: top 1s ease;
-  color: #FFF;
-}
-
 .section {
   margin: auto;
-  padding: 0 calc(6% + 30px);
+  padding: 20px calc(1% + 10px);
+  width: 80%;
   max-width: 80%;
-  height: 50vh;
+  height: 60vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;  
+  flex-direction: row;
+  justify-content: space-between;  
+}
+
+.dot{
+width: 20px;
+height: 20px;
+background-color: black;
+border-radius: 50px;
+}
+
+.activeSection {
+    background-color: #fff;
 }
 
 .section p {
